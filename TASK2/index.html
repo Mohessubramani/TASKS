@@ -15,6 +15,7 @@
   body{
     background: url(pexels-mudrik-h-amin-2485430.jpg) no-repeat center fixed ;
     background-size: cover;
+    background-attachment: scroll;
    }
  
 
@@ -22,12 +23,13 @@
 #home{
     background-color:rgb(82, 74, 34);
     text-align: center ;
+    font-size:30px;
     font-family: 'Great Vibes', cursive;
     position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    color:black;
+    color:whitesmoke;
     border-radius: 20px;
 }
 ul{
@@ -35,7 +37,7 @@ ul{
     list-style: none;
     padding: 0%;
     overflow: hidden;
-    background-color: green;
+    background-color: rgb(119, 223, 119);
     border-radius: 30px;
 }
 li{
@@ -44,6 +46,7 @@ li{
     padding: 0px 20px;
     line-height: 40px;
     border-right: 1px solid;
+    
     
 }
 li a{
@@ -58,24 +61,27 @@ li a{
     font-style: italic;
     font-weight: 600;
     font-size: 20px;
-   
 }
 
-li :hover{
+li a:hover{
     color: rgb(255, 0, 191);
 }
+li a:active {
+  color: blue;
+}
+
 
  </style>
     <body>
         
             <ul>
                 <li><span id="heading-1">PLANT SHOP</span></li>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Plants.html">Plants</a></li>
-                <li><a href="help">Help</a></li>
-                <li><a href="ABOUT US">About us</a></li>
-                <li><a href="contact us">contact us</a></li>
-                <li><a href="Login">Login</a></li>
+                <li style="float:right"><a href="Login">Login</a></li>
+                <li style="float:right"><a href="contact us">contact us</a></li>
+                <li style="float:right"><a href="ABOUT US">About us</a></li>
+                <li style="float:right"><a href="help">Help</a></li>
+                <li style="float:right"><a href="Plants.html">Plants</a></li>
+                <li style="float:right"><a href="index.html">Home</a></li>
             </ul>
             
             <div id="home">
