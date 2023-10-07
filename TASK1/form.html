@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <h1 style="background-color: aqua;" align="center">ADDMISSION FORM</h1>
+    </head>
+    <body>
+        <form target="_blank" method="post" action="home.html">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter the name"/><br><br>
+            <label for="date of birth">Date of birth:</label>
+            <input type="date" id="date of birth" name="birthday"><br><br>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" placeholder="Email id"><br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter the phone number"><br>
+            <p>Gender</p>
+            <input type="radio" id="male" name="fav_lan">
+            <label for="male">MALE</label><br>
+            <input type="radio" id="female" name="fav_lan">
+            <label for="female">FEMALE</label><br>
+            <input type="radio" id="others" name="fav_lan">
+            <label for="others">OTHERS</label><br><br>
+            <label for="mark">SSLC Mark in Percentage:</label>
+            <input type="number" id="mark" name="mark" min="0" max="100" step="1" value="0"><br>
+            <br>
+            <label for="mark">HSC Mark in Percentage:</label>
+            <input type="number" id="mark" name="mark" min="0" max="100" step="1" value="0"><br><br>
+            <p1 >Choose Your Department </p1><br><br>
+            <input type="radio" id="mech" name="fav_lan">
+            <label for="mech">MECH</label>
+            <br>
+            <input type="radio" id="cs" name="fav_lan">
+            <label for="cs">CS</label>
+            <br>
+            <input type="radio" id="civil" name="fav_lan">
+            <label for="civil">CIVIL</label><br>
+            <input type="radio" id="ece" name="fav_lan">
+            <label for="ece">ECE</label><br>
+            <input type="radio" id="eee" name="fav_lan">
+            <label for="eee">EEE</label><br>
+            <label  for="university" >Choose a university:</label>
+            <select id="university" name="uni" size="3">
+            <option value="a tech">A COLLEGE OF ENGINEERING</option>
+            <option value="b tech">B COLLEGE OF ENGINEERING</option>
+            <option value="c tech">C COLLEGE OF ENGINEERING</option>
+            <option value="d tech">D COLLEGE OF ENGINEERING</option>
+            <option value="e tech">E COLLEGE OF ENGINEERING</option>
+            </select>
+            <br>
+            <p >Post your feed back</p>
+            <textarea name="message" rows="10" cols="30" placeholder="Feed back"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="SUBMIT">
+        </form>
+
+    </body>
+</html>
