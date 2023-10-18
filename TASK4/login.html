@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background: rgb(42,183,185);
+                background: linear-gradient(0deg, rgba(42,183,185,1) 26%, rgba(247,192,72,1) 100%);
+                background-attachment: fixed;
+                margin: 0;
+                font-family: inherit;
+            }
+            #form{
+                width: 400px;
+                margin: 20vh auto 0 auto;
+                background-color: whitesmoke;
+                border-radius: 5px;
+                padding: 30px;
+            }
+            h1{
+                text-align: center;
+                color:blue ;
+            }
+            form button{
+                background-color: green;
+                color: whitesmoke;
+                border: 1px solid green;
+                border-radius: 5px;
+                padding: 10px;
+                margin: 10px 0px;
+                cursor: pointer;
+                font-size: 20px;
+                width: 100%;
+            }
+            .input_group{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 15px;
+            }
+            .input_group input{
+                border-radius: 5px;
+                font-size: 15px;
+                margin-top: 5px;
+                padding: 10px;
+                border: 2px solid seagreen;
+            }
+            .input_group input:focus{
+                outline: 0;
+            }
+            .input_group .error{
+                color: red;
+                font-size: 16px;
+                margin-top: 5px;
+
+            }
+            .input_group.success{
+                border-color: seagreen;
+            }
+            .input_group.error input{
+                border-color: red;
+            }
+        </style>
+    </head>
+<body>
+    <h1>Login</h1>
+    <div class="container">
+    <form id="form" >
+        <div class="input_group">
+            <label for="Email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Enter the Email or user name">
+            <div class="error"></div>
+        </div>
+
+        <div class="input_group">
+        <label for="Password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter the Password">
+        <div class="error"></div>
+        </div>
+        <button type="submit" id="next-page-button">Login</button> 
+        <p>Don't have an account?</p> 
+        <button type="submit" onclick="window.location.href='signup.html'">SignUp</button>
+    </form>
+
+    <script>
+        const form=document.querySelector("#form")
+        const email=document.querySelector("#email")
+        const password=document.querySelector("#password")
+      
+        form.addEventListener('submit',(e)=>{
+            e.preventDefault();
+            validateInputs();
+        })
+
+        function validateInputs(){
+            const emailval=email.value.trim();
+            const passwordval=password.value.trim();
+            
+            
+            if (emailval===""){
+                seterror(email,"email is required")
+            }
+            else if(!validateEmail(emailval)){
+                seterror(email,"place enter the valied email")
+
+            }
+            else{
+                setsuccess(email)
+            }
+
+            if (passwordval===""){
+                seterror(password,"password is required")
+            }
+            else if(passwordval.length<8){
+                seterror(password,"password must be atleast 8 characters")
+
+            }
+            else{
+                setsuccess(password)
+            }
+
+            
+
+        }
+
+        function seterror(element,message){
+            const inputgroup=element.parentElement;
+            const errorElement=inputgroup.querySelector('.error')
+
+            errorElement.innerText=message;
+            inputgroup.classList.add('error')
+            inputgroup.classList.remove('success')
+        }
+        function setsuccess(element){
+            const inputgroup=element.parentElement;
+            const errorElement=inputgroup.querySelector('.error')
+
+            errorElement.innerText='';
+            inputgroup.classList.add('success')
+            inputgroup.classList.remove('error')
+        }
+        function validateEmail(email) {
+        const regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        return regex.test(email);
+        }
+      
+       
+    </script>
+
+</div>
+</body>
+</html>
