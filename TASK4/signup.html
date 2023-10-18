@@ -10,11 +10,11 @@
                 font-family: inherit;
             }
             #form{
-                width: 500px;
+                width: 400px;
                 margin: 20vh auto 0 auto;
                 background-color: whitesmoke;
                 border-radius: 5px;
-                padding: 30px;
+                padding: 50px;
             }
             h1{
                 text-align: center;
@@ -93,7 +93,7 @@
         <input type="password" id="cpassword" name="cpassword" placeholder="Enter the ConformPassword">
         <div class="error"></div>
         </div>
-        <button type="submit">SignUp</button> 
+        <button type="submit" id="next-page-button">SignUp</button> 
          
         <p>Already have an account?</p>
 
@@ -108,6 +108,7 @@
         const email=document.querySelector("#email")
         const password=document.querySelector("#password")
         const cpassword=document.querySelector("#cpassword")
+        const nextPageButton = document.querySelector("#next-page-button")
 
         form.addEventListener('submit',(e)=>{
             e.preventDefault();
@@ -167,10 +168,16 @@
             else{
                 setsuccess(cpassword)
             }
+            nextPageButton.addEventListener('click', () => {
+            validateInputs()
 
-
-
-        }
+            if (validateInputs() === true) {
+               document.location.href = 'login.html'
+            }
+            })
+          
+            return true
+            }
         function seterror(element,message){
             const inputgroup=element.parentElement;
             const errorElement=inputgroup.querySelector('.error')
