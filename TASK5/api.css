@@ -1,0 +1,80 @@
+.comments {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-size: 20px;
+  }
+  .userName {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-size: 35px;
+  }
+  .text-muted {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+  .card-text {
+    font-size: 20px;
+  }
+  .topic {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:green;
+    text-shadow: 2px 5px 5px yellowgreen;
+  }
+ 
+  .card {
+    color: white;
+    background:rgb(125, 175, 25);
+    border-radius: 20px;
+    transition: all 0.2s;
+    padding: 30px;
+    margin: 50px;
+  }
+  .card:hover {
+    box-shadow:  10px 5px 5px green;
+      
+  }
+  body {
+    background: linear-gradient(
+        to right bottom,
+        rgba(35, 241, 207, 0.5),
+        rgba(51, 3, 154, 0.219)
+      ),
+      url("./assets/background.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .userNametitle {
+    color: black;
+  }
+  .userEmail {
+    color: rgba(6, 12, 120, 0.608);
+  }
+  .userComment {
+    color: rgba(12, 88, 5, 0.86);
+  }
+  header {
+    
+    color: whitesmoke;
+    background: rgb(42,183,185);
+    background: linear-gradient(0deg, rgba(42,183,185,1) 26%, rgba(247,192,72,1) 100%);
+    border-radius: 15px;
+    border: 5px solid rgb(247,192,72,1);
+    transition: all 0.2s;
+    padding: 10px;
+  }
+  footer {
+    color: whitesmoke;
+    background: rgb(42,183,185);
+    background: linear-gradient(0deg, rgba(42,183,185,1) 26%, rgba(247,192,72,1) 100%);
+    border-radius: 20px;
+    border: 5px solid rgba(247,192,72,1);
+    transition: all 0.2s;
+    padding: 15px;
+  }
+  a.nav-link:hover{
+    transition: 1s ;
+    color: rgb(2, 48, 2);
+  }

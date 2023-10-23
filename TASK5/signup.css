@@ -1,0 +1,72 @@
+
+.form-container {
+  place-items: center;
+  background: rgb(42,183,185);
+  background: linear-gradient(0deg, rgba(42,183,185,1) 26%, rgba(247,192,72,1) 100%);
+  background-attachment: fixed;
+  border-radius: 50px;
+  padding: 50px;
+  margin: 50px;
+ }
+label {
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:green;
+  text-shadow: 2px 5px 5px yellowgreen;
+}
+h1 {
+  font-size: 50px;
+  color:green ;
+  text-align: center;
+}
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: whitesmoke;
+  background: rgb(42,183,185);
+  background: linear-gradient(0deg, rgba(42,183,185,1) 26%, rgba(247,192,72,1) 100%);
+  border-radius: 15px;
+  border: 5px solid rgb(247,192,72,1);
+  transition: all 0.2s;
+  padding: 10px;
+}
+
+footer {
+  
+  color: whitesmoke;
+  background: rgb(42,183,185);
+  background: linear-gradient(0deg, rgba(42,183,185,1) 26%, rgba(247,192,72,1) 100%);
+  border-radius: 20px;
+  border: 5px solid rgba(247,192,72,1);
+  transition: all 0.2s;
+  padding: 15px;
+}
+
+#submit{
+  background-color: green;
+  color: whitesmoke;
+  border: 1px solid green;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px 0px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+}
+body {
+  background: linear-gradient(
+      to right bottom,
+      rgba(35, 241, 207, 0.5),
+      rgba(51, 3, 154, 0.219)
+    ),
+    url("./assets/background.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+a.nav-link:hover{
+  transition: 1s ;
+  color: rgb(2, 48, 2);
+}

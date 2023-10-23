@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "msedge",
+            "name": "http://127.0.0.1:3000/TASK5/home.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/TASK5/home.html"
+        },
+        {
+            "type": "msedge",
+            "name": "http://127.0.0.1:3000/TASK5/signup.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/TASK5/signup.html"
+        },
+        {
+            "type": "msedge",
+            "name": "http://127.0.0.1:3000/TASK5/api.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/TASK5/api.html"
+        }
+    ]
+}
